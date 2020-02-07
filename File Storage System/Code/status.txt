@@ -1,0 +1,9 @@
+make[1]: Entering directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Comms'
+gcc  -c tcp_comm.c
+make[1]: Leaving directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Comms'
+make[1]: Entering directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Client'
+gcc  -o client ../Comms/tcp_comm.o client-skel.c -l pthread
+make[1]: Leaving directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Client'
+make[1]: Entering directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Server'
+gcc  -o server ../Comms/tcp_comm.o server-skel.c -l pthread
+make[1]: Leaving directory '/mnt/d/Stuff/C Projects/ClienteServidor/File Storage System/Code/Server'
